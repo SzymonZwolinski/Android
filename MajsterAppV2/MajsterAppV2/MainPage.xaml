@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MajsterAppV2.MainPage">
+
+    <StackLayout BackgroundColor="gray">
+
+        <StackLayout BackgroundColor="Gray" Orientation="Horizontal">
+            <Image Source="logo.png"/>
+            <Label Text="MajsterAPP" FontSize="50" TextColor="Black" HorizontalTextAlignment="Center" Padding="10" />
+        </StackLayout>
+        <!--GRID|MENU-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        </Grid>
+        <!--BUTTON|MENU-->
+        <Button Image="dynamo.png"  Grid.Row="0" Grid.Column="0" Text="Latarka" Clicked="Button_Clicked" />
+        <Button Image="poziomica.png" Grid.Row="1" Grid.Column="0" Text="Poziomica" Clicked="Button_Clicked_2" />
+        <Button Image="katownik.png" Grid.Row="2" Grid.Column="0" Text="Kątownik" />
+        <Button Image="minutnik.png" Grid.Row="3" Grid.Column="0" Text="Minutnik" Clicked="Button_Clicked_4" />
+        <Button Image="kompas.png" Grid.Row="4" Grid.Column="0" Text="Kompas" />
+        <Button Image="linijka" Grid.Row="5" Grid.Column="0" Text="Linijka" />
+
+    </StackLayout>
+   
+
+</ContentPage>
