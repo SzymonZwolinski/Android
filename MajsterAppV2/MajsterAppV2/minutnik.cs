@@ -40,17 +40,7 @@ namespace MajsterAppV2
 
                 }
             };
-
-            using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
-
-namespace MajsterAppV2
-{
-    public class Page1 : ContentPage
+  
     {
 
         public void Funkcja_Minutnik()
