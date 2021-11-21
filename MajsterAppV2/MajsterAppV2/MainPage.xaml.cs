@@ -16,17 +16,30 @@ namespace MajsterAppV2
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new latarka());
+            await Navigation.PushAsync(new latarka());
         }
-        private void Button_Clicked_2(object sender, EventArgs e)
+        /*private void Button_Clicked_2(object sender, EventArgs e)
         {
             Navigation.PushAsync(new poziomica());
         }
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ());
+        }
+        
         private void Button_Clicked_4(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new minutnik());
+            Navigation.PushAsync(new ());
         }
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ());
+        }
+        private void Button_Clicked_6(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ());
+        }*/
     }
 }
