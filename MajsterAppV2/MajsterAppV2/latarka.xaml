@@ -5,9 +5,9 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="Gray" Padding="60"  >
             <Image Source="logo.png" VerticalOptions="FillAndExpand"  />
-            <Button Text="ON" BackgroundColor="Green" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" >
+            <Button Text="ON" BackgroundColor="Green" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" Clicked="PrzyciskON" >
             </Button>
-            <Button Text="OFF" BackgroundColor="Red" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" >
+            <Button Text="OFF" BackgroundColor="Red" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" Clicked="PrzyciskOFF" >
             </Button>
             <Button Text="Powrót do menu" BackgroundColor="LightGray" VerticalOptions="End" Clicked="NavigateButton_OnClicked" TextTransform="Lowercase">
             </Button>
