@@ -33,7 +33,6 @@ C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\R.txt
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\R.cs.flag
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\MajsterAppV2.Android.csproj.CoreCompileInputs.cache
-C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\MajsterAppV2.Android.csproj.CopyComplete
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\MajsterAppV2.Android.dll
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\MajsterAppV2.Android.pdb
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\android\bin\com.companyname.majsterappv2.apk
@@ -581,3 +580,4 @@ C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\res\drawable\minutnik.png
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\res\drawable\poziomica.png
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\res\drawable\logo.png
+C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Debug\110\MajsterAppV2.Android.csproj.CopyComplete

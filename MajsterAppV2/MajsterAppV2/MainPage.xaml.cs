@@ -28,11 +28,12 @@ namespace MajsterAppV2
         {
             Navigation.PushAsync(new ());
         }
-        
-        private void Button_Clicked_4(object sender, EventArgs e)
+        */
+        private async void NavigateButton_OnClicked_4(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ());
+            await Navigation.PushAsync(new minutnik());
         }
+        /*
         private void Button_Clicked_5(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ());

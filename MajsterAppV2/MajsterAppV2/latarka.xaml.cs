@@ -22,7 +22,7 @@ namespace MajsterAppV2
             await Navigation.PushAsync(new MainPage());
         }
         
-        private void PrzyciskON(object sender, EventArgs e)
+        private async void PrzyciskON(object sender, EventArgs e)
         {
             try
             {
@@ -33,15 +33,15 @@ namespace MajsterAppV2
             }
             
         }
-        private void PrzyciskOFF(object sender, EventArgs e)
+        private async void PrzyciskOFF(object sender, EventArgs e)
         {
             try
             {
-                await Flashlight.TurnOffAsync()
+                await Flashlight.TurnOffAsync();
             }
             catch(Exception)
             {
-                throw;
+                
             }
         }
     }

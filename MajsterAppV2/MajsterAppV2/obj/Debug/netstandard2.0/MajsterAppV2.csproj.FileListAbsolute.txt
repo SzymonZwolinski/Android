@@ -14,3 +14,4 @@ C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Debu
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Debug\netstandard2.0\ref\MajsterAppV2.dll
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Debug\netstandard2.0\MajsterAppV2.pdb
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Debug\netstandard2.0\latarka.xaml.g.cs
+C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Debug\netstandard2.0\minutnik.xaml.g.cs
