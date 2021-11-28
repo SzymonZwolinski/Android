@@ -4,13 +4,25 @@
              x:Class="MajsterAppV2.minutnik">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Gray" Padding="60"  >
-            <Image Source="minutnik.png" VerticalOptions="FillAndExpand"  />
-            <Button Text="START" BackgroundColor="Green" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" >
-            </Button>
-            <Button Text="STOP" BackgroundColor="Red" VerticalOptions="CenterAndExpand" CornerRadius="15" BorderColor="Black" BorderWidth="3" >
-            </Button>
-            <Button Text="Powrót do menu" BackgroundColor="LightGray" VerticalOptions="End" Clicked="NavigateButton_OnClicked" TextTransform="Lowercase">
-            </Button>
+            <Entry x:Name="_entry"
+                   Placeholder="pobudka"></Entry>
+            <Label Text="Podaj czas"></Label>
+            <TimePicker x:Name="_timePicker"
+                        Time="11:00:00"
+                        Format="T"
+                        PropertyChanged="OnTimePickerPropertyChanged"></TimePicker>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Enable timer"></Label>
+                <Switch x:Name="_switch"
+                        HorizontalOptions="EndAndExpand"
+                        Toggled="OnSwitchToggled"></Switch>
+                
+            </StackLayout>
+           
+
+ 
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

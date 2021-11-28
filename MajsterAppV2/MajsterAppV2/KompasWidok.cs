@@ -32,7 +32,7 @@ namespace MajsterAppV2
             var mojKompas = new kompas_logika();
             mojKompas.WezWartoscKompasu += mojKompas_WezWartoscKompas;
         }
-        private void mojompas_WezWartoscKompas(object sender, string e)
+        private void mojKompas_WezWartoscKompas(object sender, string e)
         {
             kompasWartosc = e;
         }

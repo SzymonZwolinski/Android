@@ -7,7 +7,7 @@
         <StackLayout BackgroundColor="Gray" Padding="60">
             <Button Text="Powrót do menu" BackgroundColor="LightGray" VerticalOptions="End" Clicked="NavigateButton_OnClicked" TextTransform="Lowercase">
             </Button>
-            <Label Text="{kierunek_kompasu}"
+            <Label Text="{Binding KompasWartosc}"
                    TextColor="Magenta"
                    FontSize="Title"
                    HorizontalOptions="Center"

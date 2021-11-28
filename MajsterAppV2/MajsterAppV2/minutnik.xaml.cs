@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,17 +13,56 @@ namespace MajsterAppV2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class minutnik : ContentPage
     {
+        DateTime _triggerTime;
         public minutnik()
         {
             InitializeComponent();
+            Device.StartTimer(TimeSpan.FromSeconds(1), OnTimerTick);
+            
         }
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+
+        bool OnTimerTick()
+        {
+            if (_switch.IsToggled && DateTime.Now >= _triggerTime)
+            {
+                _switch.IsToggled = false;
+                DisplayAlert("Timer Alert", "The '" + _entry.Text + "'timer has elapsed", "OK");
+            }
+            return true;
+        }
+        void OnTimePickerPropertyChanged(object sender, PropertyChangedEventArgs args)
+        {
+            if (args.PropertyName == "Time")
+            {
+                SetTriggerTime();
+            }
+        }
+
+        void OnSwitchToggled(object sender, ToggledEventArgs args)
+        {
+            SetTriggerTime();
+        }
+
+        void SetTriggerTime()
+        {
+            if (_switch.IsToggled)
+            {
+                _triggerTime = DateTime.Today + _timePicker.Time;
+                if (_triggerTime < DateTime.Now)
+                {
+                    _triggerTime += TimeSpan.FromDays(1);
+                }
+            }
+        }
+                private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
 
-        private System.Timers.Timer _timer;
-        private int _countSeconds;
+
+
+        /*private System.Timers.Timer _timer;
+        public int _countSeconds;
 
         void minutnik_kod()
         {
@@ -36,6 +76,8 @@ namespace MajsterAppV2
             _timer.Enabled = true;
         }
 
+        
+        
         private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
         {
             _countSeconds--;
@@ -46,6 +88,8 @@ namespace MajsterAppV2
             {
                 _timer.Stop();
             }
+        
         }
+        */
     }
 }
