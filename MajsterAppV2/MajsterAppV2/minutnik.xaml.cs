@@ -26,7 +26,7 @@ namespace MajsterAppV2
             if (_switch.IsToggled && DateTime.Now >= _triggerTime)
             {
                 _switch.IsToggled = false;
-                DisplayAlert("Timer Alert", "The '" + _entry.Text + "'timer has elapsed", "OK");
+                DisplayAlert("Koniec czasu", "Ustawione - '" + _entry.Text + "'wydarzenie się zakończyło", "OK");
             }
             return true;
         }
