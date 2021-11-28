@@ -33,6 +33,13 @@ namespace MajsterAppV2
         {
             await Navigation.PushAsync(new minutnik());
         }
+
+        private async void NavigateButton_OnClicked_5(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new kompas());
+        }
+
+
         /*
         private void Button_Clicked_5(object sender, EventArgs e)
         {
