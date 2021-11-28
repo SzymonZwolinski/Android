@@ -24,8 +24,14 @@ namespace MajsterAppV2
         {
             try
             {
-                Compass.Start(SensorSpeed.UI);
-
+                if (Compass.IsMonitoring)
+                {
+                    Compass.Stop();
+                }
+                else
+                {
+                    Compass.Start(SensorSpeed.UI);
+                }
             }catch(FeatureNotSupportedException fnsEx)
             {
                 Console.WriteLine(fnsEx.Message);
