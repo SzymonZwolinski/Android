@@ -34,7 +34,7 @@ namespace MajsterAppV2
         }
         private void mojKompas_WezWartoscKompas(object sender, string e)
         {
-            kompasWartosc = e;
+            KompasWartosc = e;
         }
         protected virtual void OnPropertyChanged(string propertyNazwa)
         {
