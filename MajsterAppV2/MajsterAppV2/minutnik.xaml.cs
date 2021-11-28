@@ -20,5 +20,32 @@ namespace MajsterAppV2
         {
             await Navigation.PushAsync(new MainPage());
         }
+
+        private System.Timers.Timer _timer;
+        private int _countSeconds;
+
+        void minutnik_kod()
+        {
+            _timer = new System.Timers.Timer();
+            //Odpala event Timer co sekunde
+            _timer.Interval = 1000;
+            _timer.Elapsed += OnTimedEvent;
+            //liczy w dól 5 sekund
+            _countSeconds = 5;
+
+            _timer.Enabled = true;
+        }
+
+        private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            _countSeconds--;
+
+            //tutaj upgrade UI z kazda sekunda
+
+            if (_countSeconds == 0)
+            {
+                _timer.Stop();
+            }
+        }
     }
 }
