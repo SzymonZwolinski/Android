@@ -12,10 +12,12 @@ namespace MajsterAppV2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class kompas : ContentPage
     {
+        KompasWidok VM;
         public kompas()
         {
             InitializeComponent();
-
+            BindingContext = VM = new KompasWidok();
+            VM.StartKompas();
            
         }
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
