@@ -24,7 +24,7 @@
         </Grid>
         <!--BUTTON|MENU-->
         <Button Image="dynamo.png"  Grid.Row="0" Grid.Column="0" Text="Latarka" Clicked="NavigateButton_OnClicked" />
-        <Button Image="poziomica.png" Grid.Row="1" Grid.Column="0" Text="Poziomica" />
+        <Button Image="poziomica.png" Grid.Row="1" Grid.Column="0" Text="Poziomica" Clicked="NavigateButton_OnClicked_2" />
         <Button Image="katownik.png" Grid.Row="2" Grid.Column="0" Text="Kątownik"  />
         <Button Image="minutnik.png" Grid.Row="3" Grid.Column="0" Text="Minutnik" Clicked="NavigateButton_OnClicked_4"  />
         <Button Image="kompas.png" Grid.Row="4" Grid.Column="0" Text="Kompas" Clicked="NavigateButton_OnClicked_5"  />

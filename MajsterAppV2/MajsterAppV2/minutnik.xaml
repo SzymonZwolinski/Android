@@ -18,11 +18,7 @@
                         Toggled="OnSwitchToggled"></Switch>
                 
             </StackLayout>
-           
-
- 
-
-
+          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

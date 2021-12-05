@@ -20,10 +20,11 @@ namespace MajsterAppV2
         {
             await Navigation.PushAsync(new latarka());
         }
-        /*private void Button_Clicked_2(object sender, EventArgs e)
+        private void NavigateButton_OnClicked_2(object sender, EventArgs e)
         {
             Navigation.PushAsync(new poziomica());
         }
+        /*
         private void Button_Clicked_3(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ());
