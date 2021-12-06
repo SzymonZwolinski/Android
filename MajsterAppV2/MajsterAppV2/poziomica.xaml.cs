@@ -73,13 +73,14 @@ namespace MajsterAppV2
             
             canvas.DrawCircle(0, 0, 100, blackPaint);
 
+            canvas.DrawCircle(width/2, height/2, 30f, greenPaint);
+
             // Bąbelek wskazujący poziom
             var x = (acceleration.X * RoundingValue);
             var y = (acceleration.Y * RoundingValue);
             canvas.DrawCircle(x, y, 20f, whitePaint);
 
-            canvas.DrawCircle(bounds.MidX, bounds.MidY, 30f, greenPaint);
-
+           
         }
 
         protected override void OnAppearing()
