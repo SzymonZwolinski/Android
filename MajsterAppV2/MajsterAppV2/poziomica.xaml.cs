@@ -35,17 +35,11 @@ namespace MajsterAppV2
             IsAntialias = true
         };
 
-        readonly SKPaint whiteLine = new SKPaint
-        {
-            Style = SKPaintStyle.Stroke,
-            Color = SKColors.White,
-            StrokeWidth = 1
-        };
 
-        readonly SKPaint whitePaint = new SKPaint
+        readonly SKPaint redPaint = new SKPaint
         {
-            Style = SKPaintStyle.Fill,
-            Color = SKColors.Beige,
+            Style = SKPaintStyle.StrokeAndFill,
+            Color = SKColors.Red,
             IsAntialias = true
         };
 
@@ -78,7 +72,7 @@ namespace MajsterAppV2
             // Bąbelek wskazujący poziom
             var x = (acceleration.X * RoundingValue);
             var y = (acceleration.Y * RoundingValue);
-            canvas.DrawCircle(x, y, 20f, whitePaint);
+            canvas.DrawCircle(x, y, 20f, redPaint);
 
            
         }
