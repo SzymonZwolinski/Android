@@ -3,54 +3,111 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
+using SkiaSharp;
+using SkiaSharp.Views.Forms;
 using Xamarin.Essentials;
 using System.Numerics;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace MajsterAppV2
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    
     public partial class poziomica : ContentPage
     {
         public poziomica()
         {
             InitializeComponent();
+            Device.StartTimer(TimeSpan.FromSeconds(1f / 60), () =>
+            {
+                canvasView.InvalidateSurface();
+                return true;
+            });
         }
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
-    }
-    protected override void Wywolanie()
-    {
-        Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
 
-
-        try
+        readonly SKPaint blackPaint = new SKPaint
         {
-            Accelerometer.Start(SensorSpeed.UI);
-        }
-        catch (FeatureNotSupportedException ex)
+            Style = SKPaintStyle.Fill,
+            Color = SKColors.Black,
+            IsAntialias = true
+        };
+
+        readonly SKPaint whiteLine = new SKPaint
         {
-            Console.WriteLine($"Accelerometer - {ex.Message}");
+            Style = SKPaintStyle.Stroke,
+            Color = SKColors.White,
+            StrokeWidth = 1
+        };
+
+        readonly SKPaint whitePaint = new SKPaint
+        {
+            Style = SKPaintStyle.Fill,
+            Color = SKColors.Beige,
+            IsAntialias = true
+        };
+        void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
+        {
+            var surface = e.Surface;
+            var canvas = surface.Canvas;
+
+            canvas.Clear(SKColors.CornflowerBlue);
+
+            var width = e.Info.Width;
+            var height = e.Info.Height;
+
+          
+            canvas.Translate(width / 2, height / 2);
+            canvas.Scale(width / 300f);
+
+            
+            canvas.DrawCircle(0, 0, 100, blackPaint);
+
+            // Bąbelek wskazujący poziom
+            var x = (acceleration.X * RoundingValue);
+            var y = (acceleration.Y * RoundingValue);
+            canvas.DrawCircle(x, y, 20f, whitePaint);
+
         }
+
+        protected override void OnAppearing()
+        {
+            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+
+            try
+            {
+                Accelerometer.Start(SensorSpeed.UI);
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                Console.WriteLine(fnsEx.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
+        {
+            acceleration = e.Reading.Acceleration;
+        }
+
+        protected override void OnDisappearing()
+        {
+            Accelerometer.Stop();
+            Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
+        }
+
+        Vector3 acceleration;
+        const float RoundingValue = 100f;
     }
-
-
-    void Accelerometer_ReadingChanged(AccelerometerChangedEventArgs e)
-    {
-        acceleration = e.Reading.Acceleration;
-    }
-
-    protected override void odznikanie()
-    {
-
-        Accelerometer.Stop();
-        Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
-    }
-
-
 }
+    
+
+
+
 
 

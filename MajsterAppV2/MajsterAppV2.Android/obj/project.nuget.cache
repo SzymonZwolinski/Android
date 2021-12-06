@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BubXuJwU/CSaaOBTUlUzXNiI3icOHJMgT2dzLUIfYyP7c/9XMQUKMdpLhfbf+FCO3qDxoT7g1FJeiVoLgqJpoQ==",
+  "dgSpecHash": "kgsqGaQ00/0oHW3I/gzaYp3NAWYRALIHcvrgaTj970ghluDAYgIYihyQR2BazYixcnVjRVAclQU3igA99kJ30A==",
   "success": true,
   "projectFilePath": "C:\\Users\\michj\\Desktop\\eloelo123\\MajsterAppV2\\MajsterAppV2\\MajsterAppV2.Android\\MajsterAppV2.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\michj\\.nuget\\packages\\skiasharp\\2.80.3\\skiasharp.2.80.3.nupkg.sha512",
+    "C:\\Users\\michj\\.nuget\\packages\\skiasharp.views\\2.80.3\\skiasharp.views.2.80.3.nupkg.sha512",
+    "C:\\Users\\michj\\.nuget\\packages\\skiasharp.views.forms\\2.80.3\\skiasharp.views.forms.2.80.3.nupkg.sha512",
     "C:\\Users\\michj\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
