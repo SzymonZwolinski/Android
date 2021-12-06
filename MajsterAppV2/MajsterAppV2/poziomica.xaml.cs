@@ -48,6 +48,14 @@ namespace MajsterAppV2
             Color = SKColors.Beige,
             IsAntialias = true
         };
+
+        readonly SKPaint greenPaint = new SKPaint
+        {
+            Color = SKColors.Green,
+            StrokeWidth = 2,
+            Style = SKPaintStyle.Stroke,
+            IsAntialias = true
+        };
         void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
             var surface = e.Surface;
@@ -69,6 +77,8 @@ namespace MajsterAppV2
             var x = (acceleration.X * RoundingValue);
             var y = (acceleration.Y * RoundingValue);
             canvas.DrawCircle(x, y, 20f, whitePaint);
+
+            canvas.DrawCircle(bounds.MidX, bounds.MidY, 30f, greenPaint);
 
         }
 
