@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MajsterAppV2.minutnik">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray" Padding="60"  >
+            <Entry x:Name="_entry"
+                   Placeholder="nazwa wydarzenia"></Entry>
+            <Label Text="Podaj czas"></Label>
+            <TimePicker x:Name="_timePicker"
+                        Time="11:00:00"
+                        Format="T"
+                        PropertyChanged="OnTimePickerPropertyChanged"></TimePicker>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Włącz minutnik"></Label>
+                <Switch x:Name="_switch"
+                        HorizontalOptions="EndAndExpand"
+                        Toggled="OnSwitchToggled"></Switch>
+                
+            </StackLayout>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
