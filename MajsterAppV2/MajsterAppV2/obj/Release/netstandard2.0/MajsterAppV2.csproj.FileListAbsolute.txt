@@ -17,3 +17,5 @@ C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Rele
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Release\netstandard2.0\MajsterAppV2.pdb
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Release\netstandard2.0\kompas.xaml.g.cs
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Release\netstandard2.0\poziomica.xaml.g.cs
+C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Release\netstandard2.0\linijka.xaml.g.cs
+C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2\obj\Release\netstandard2.0\katownik.xaml.g.cs

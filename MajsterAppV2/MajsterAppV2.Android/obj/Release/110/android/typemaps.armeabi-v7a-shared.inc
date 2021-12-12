@@ -31,32 +31,32 @@
 	.section	.rodata.map_aname.5,"aMS",%progbits,1
 	.type	.L.map_aname.5, %object
 .L.map_aname.5:
-	.asciz	"MajsterAppV2.Android"
-	.size	.L.map_aname.5, 21
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	.L.map_aname.5, 27
 
 	.section	.rodata.map_aname.6,"aMS",%progbits,1
 	.type	.L.map_aname.6, %object
 .L.map_aname.6:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	.L.map_aname.6, 27
+	.asciz	"Xamarin.AndroidX.CustomView"
+	.size	.L.map_aname.6, 28
 
 	.section	.rodata.map_aname.7,"aMS",%progbits,1
 	.type	.L.map_aname.7, %object
 .L.map_aname.7:
-	.asciz	"Xamarin.AndroidX.CustomView"
-	.size	.L.map_aname.7, 28
+	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
+	.size	.L.map_aname.7, 46
 
 	.section	.rodata.map_aname.8,"aMS",%progbits,1
 	.type	.L.map_aname.8, %object
 .L.map_aname.8:
-	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
-	.size	.L.map_aname.8, 46
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	.L.map_aname.8, 24
 
 	.section	.rodata.map_aname.9,"aMS",%progbits,1
 	.type	.L.map_aname.9, %object
 .L.map_aname.9:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	.L.map_aname.9, 24
+	.asciz	"MajsterAppV2.Android"
+	.size	.L.map_aname.9, 21
 
 	.section	.rodata.map_aname.10,"aMS",%progbits,1
 	.type	.L.map_aname.10, %object

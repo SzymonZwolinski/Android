@@ -24,12 +24,12 @@ namespace MajsterAppV2
         {
             Navigation.PushAsync(new poziomica());
         }
-        /*
-        private void Button_Clicked_3(object sender, EventArgs e)
+        
+        private async void NavigateButton_OnClicked_3(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ());
+           await Navigation.PushAsync(new katownik());
         }
-        */
+        
         private async void NavigateButton_OnClicked_4(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new minutnik());
@@ -41,14 +41,9 @@ namespace MajsterAppV2
         }
 
 
-        /*
-        private void Button_Clicked_5(object sender, EventArgs e)
+        private void NavigateButton_OnClicked_6(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ());
+            Navigation.PushAsync(new linijka());
         }
-        private void Button_Clicked_6(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ());
-        }*/
     }
 }

@@ -130,26 +130,6 @@ map_modules:
 	.zero	4
 	.xword	0
 
-	/* module_uuid: a936f945-8825-409a-ade6-c7f1862362ff */
-	.byte	0x45, 0xf9, 0x36, 0xa9, 0x25, 0x88, 0x9a, 0x40, 0xad, 0xe6, 0xc7, 0xf1, 0x86, 0x23, 0x62, 0xff
-	/* entry_count */
-	.word	1
-	/* duplicate_count */
-	.word	0
-	/* map */
-	.xword	module5_managed_to_java
-	/* duplicate_map */
-	.xword	0
-	/* assembly_name: MajsterAppV2.Android */
-	.xword	.L.map_aname.5
-	/* image */
-	.xword	0
-	/* java_name_width */
-	.word	0
-	/* java_map */
-	.zero	4
-	.xword	0
-
 	/* module_uuid: 0bd77049-1c2a-4414-86c3-3cee22433f55 */
 	.byte	0x49, 0x70, 0xd7, 0x0b, 0x2a, 0x1c, 0x14, 0x44, 0x86, 0xc3, 0x3c, 0xee, 0x22, 0x43, 0x3f, 0x55
 	/* entry_count */
@@ -157,11 +137,11 @@ map_modules:
 	/* duplicate_count */
 	.word	4
 	/* map */
-	.xword	module6_managed_to_java
+	.xword	module5_managed_to_java
 	/* duplicate_map */
-	.xword	module6_managed_to_java_duplicates
+	.xword	module5_managed_to_java_duplicates
 	/* assembly_name: Xamarin.AndroidX.ViewPager */
-	.xword	.L.map_aname.6
+	.xword	.L.map_aname.5
 	/* image */
 	.xword	0
 	/* java_name_width */
@@ -177,11 +157,11 @@ map_modules:
 	/* duplicate_count */
 	.word	1
 	/* map */
-	.xword	module7_managed_to_java
+	.xword	module6_managed_to_java
 	/* duplicate_map */
-	.xword	module7_managed_to_java_duplicates
+	.xword	module6_managed_to_java_duplicates
 	/* assembly_name: Xamarin.AndroidX.CustomView */
-	.xword	.L.map_aname.7
+	.xword	.L.map_aname.6
 	/* image */
 	.xword	0
 	/* java_name_width */
@@ -197,11 +177,11 @@ map_modules:
 	/* duplicate_count */
 	.word	0
 	/* map */
-	.xword	module8_managed_to_java
+	.xword	module7_managed_to_java
 	/* duplicate_map */
 	.xword	0
 	/* assembly_name: Xamarin.AndroidX.AppCompat.AppCompatResources */
-	.xword	.L.map_aname.8
+	.xword	.L.map_aname.7
 	/* image */
 	.xword	0
 	/* java_name_width */
@@ -217,10 +197,30 @@ map_modules:
 	/* duplicate_count */
 	.word	4
 	/* map */
+	.xword	module8_managed_to_java
+	/* duplicate_map */
+	.xword	module8_managed_to_java_duplicates
+	/* assembly_name: Xamarin.AndroidX.Loader */
+	.xword	.L.map_aname.8
+	/* image */
+	.xword	0
+	/* java_name_width */
+	.word	0
+	/* java_map */
+	.zero	4
+	.xword	0
+
+	/* module_uuid: 113aa96e-2925-42a5-9b39-f2cd24d29db7 */
+	.byte	0x6e, 0xa9, 0x3a, 0x11, 0x25, 0x29, 0xa5, 0x42, 0x9b, 0x39, 0xf2, 0xcd, 0x24, 0xd2, 0x9d, 0xb7
+	/* entry_count */
+	.word	1
+	/* duplicate_count */
+	.word	0
+	/* map */
 	.xword	module9_managed_to_java
 	/* duplicate_map */
-	.xword	module9_managed_to_java_duplicates
-	/* assembly_name: Xamarin.AndroidX.Loader */
+	.xword	0
+	/* assembly_name: MajsterAppV2.Android */
 	.xword	.L.map_aname.9
 	/* image */
 	.xword	0
@@ -4301,7 +4301,7 @@ map_java:
 
 	/* #372 */
 	/* module_index */
-	.word	8
+	.word	7
 	/* type_token_id */
 	.word	33554441
 	/* java_name */
@@ -4311,7 +4311,7 @@ map_java:
 
 	/* #373 */
 	/* module_index */
-	.word	8
+	.word	7
 	/* type_token_id */
 	.word	33554440
 	/* java_name */
@@ -5261,7 +5261,7 @@ map_java:
 
 	/* #468 */
 	/* module_index */
-	.word	7
+	.word	6
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -5521,7 +5521,7 @@ map_java:
 
 	/* #494 */
 	/* module_index */
-	.word	9
+	.word	8
 	/* type_token_id */
 	.word	33554452
 	/* java_name */
@@ -5531,7 +5531,7 @@ map_java:
 
 	/* #495 */
 	/* module_index */
-	.word	9
+	.word	8
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -5541,7 +5541,7 @@ map_java:
 
 	/* #496 */
 	/* module_index */
-	.word	9
+	.word	8
 	/* type_token_id */
 	.word	33554447
 	/* java_name */
@@ -5551,7 +5551,7 @@ map_java:
 
 	/* #497 */
 	/* module_index */
-	.word	9
+	.word	8
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -5561,7 +5561,7 @@ map_java:
 
 	/* #498 */
 	/* module_index */
-	.word	9
+	.word	8
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -6031,7 +6031,7 @@ map_java:
 
 	/* #545 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	33554459
 	/* java_name */
@@ -6041,7 +6041,7 @@ map_java:
 
 	/* #546 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	33554461
 	/* java_name */
@@ -6051,7 +6051,7 @@ map_java:
 
 	/* #547 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -6061,7 +6061,7 @@ map_java:
 
 	/* #548 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -6071,7 +6071,7 @@ map_java:
 
 	/* #549 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	0
 	/* java_name */
@@ -8471,7 +8471,7 @@ map_java:
 
 	/* #789 */
 	/* module_index */
-	.word	5
+	.word	9
 	/* type_token_id */
 	.word	33554434
 	/* java_name */
@@ -10471,7 +10471,7 @@ map_java:
 
 	/* #989 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	33554465
 	/* java_name */
@@ -10481,7 +10481,7 @@ map_java:
 
 	/* #990 */
 	/* module_index */
-	.word	6
+	.word	5
 	/* type_token_id */
 	.word	33554471
 	/* java_name */
