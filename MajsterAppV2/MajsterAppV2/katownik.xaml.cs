@@ -50,11 +50,11 @@ public class OrientationSensorTest
             else
                 OrientationSensor.Start(speed);
         }
-        catch (FeatureNotSupportedException fnsEx)
+        catch (FeatureNotSupportedException)
         {
             // Feature not supported on device
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             // Other error has occurred.
         }

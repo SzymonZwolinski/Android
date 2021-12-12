@@ -4,9 +4,11 @@
              x:Class="MajsterAppV2.linijka">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label>Progres tworzenia linijki</Label>
+            <Grid Grid.Row="0" Grid.Column="0" Padding="10,0,10,0">
+                <ProgressBar BackgroundColor="Transparent"  Progress="0.08"  HorizontalOptions="FillAndExpand" HeightRequest="20"/>
+                <Label Text="8%" TextColor="Blue" Margin="80,0,0,0"></Label>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

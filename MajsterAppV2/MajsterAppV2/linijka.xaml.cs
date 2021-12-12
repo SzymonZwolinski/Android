@@ -15,6 +15,8 @@ namespace MajsterAppV2
         public linijka()
         {
             InitializeComponent();
+            ProgressBar progressBar = new ProgressBar { Progress = 0.9f };
+         
         }
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
