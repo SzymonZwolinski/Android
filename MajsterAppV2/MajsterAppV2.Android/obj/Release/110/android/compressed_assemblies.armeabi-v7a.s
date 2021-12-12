@@ -55,7 +55,7 @@
 
 	/* 3: MajsterAppV2.dll */
 	/* uncompressed_file_size */
-	.long	30720
+	.long	31232
 	/* loaded */
 	.byte	0
 	/* data */
@@ -136,7 +136,7 @@
 
 	/* 12: System.Numerics.dll */
 	/* uncompressed_file_size */
-	.long	26624
+	.long	27136
 	/* loaded */
 	.byte	0
 	/* data */
@@ -343,7 +343,7 @@
 
 	/* 35: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.long	45568
+	.long	47616
 	/* loaded */
 	.byte	0
 	/* data */
