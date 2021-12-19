@@ -10,7 +10,6 @@ namespace MajsterAppV2
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string wartoscx;
-        private string wartoscy;
         public string Wartoscx
         {
             set
@@ -24,22 +23,6 @@ namespace MajsterAppV2
             get
             {
                 return wartoscx;
-            }
-        }
-
-        public string Wartoscy
-        {
-            set
-            {
-                if (wartoscy != value)
-                {
-                    wartoscy = value;
-                    OnPropertyChanged("wartoscy");
-                }
-            }
-            get
-            {
-                return wartoscy;
             }
         }
 
@@ -64,19 +47,3 @@ namespace MajsterAppV2
 
     }
 }
-/*
-
-
-
-    
-        public void StartKompas()
-        {
-            var mojKompas = new kompas_logika();
-            mojKompas.WezWartoscKompasu += mojKompas_WezWartoscKompas;
-        }
-        private void mojKompas_WezWartoscKompas(object sender, string e)
-        {
-            KompasWartosc = e;
-        }
- 
- */

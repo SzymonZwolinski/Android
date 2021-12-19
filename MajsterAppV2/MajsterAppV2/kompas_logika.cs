@@ -16,7 +16,7 @@ namespace MajsterAppV2
         private void Compass_ReadingChanged(object sender, CompassChangedEventArgs e)
         {
             double value = e.Reading.HeadingMagneticNorth;
-            string valueFormat = string.Format("{0} {1} {2}", value.ToString("0"), CalculateDirection(value), "\u00b0");
+            string valueFormat = string.Format("{0} {1} {2}", value.ToString("0"), "\u00b0","\n", CalculateDirection(value));
             WezWartoscKompasu?.Invoke(this, valueFormat);
         }
 
