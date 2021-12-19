@@ -18,7 +18,7 @@ namespace MajsterAppV2
             InitializeComponent();
             Device.StartTimer(TimeSpan.FromSeconds(1f / 60), () =>
             {
-                canvasView.InvalidateSurface();
+               // canvasView.InvalidateSurface();
                 return true;
             });
         }

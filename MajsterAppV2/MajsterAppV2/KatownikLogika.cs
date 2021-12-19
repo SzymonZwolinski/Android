@@ -34,11 +34,11 @@ namespace MajsterAppV2
                 else
                     OrientationSensor.Start(SensorSpeed.UI);
             }
-            catch (FeatureNotSupportedException fnsEx)
+            catch (FeatureNotSupportedException)
             {
                 // Feature not supported on device
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Other error has occurred.
             }

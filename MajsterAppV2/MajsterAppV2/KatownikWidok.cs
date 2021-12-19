@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.ComponentModel;
 
@@ -44,6 +45,22 @@ namespace MajsterAppV2
         {
             Wartoscx = e;
         }
+
+        protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
+        {
+            if (!Equals(field, newValue))
+            {
+                field = newValue;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                return true;
+            }
+
+            return false;
+        }
+
+        private string dane1;
+
+        public string dane { get => dane1; set => SetProperty(ref dane1, value); }
 
     }
 }
