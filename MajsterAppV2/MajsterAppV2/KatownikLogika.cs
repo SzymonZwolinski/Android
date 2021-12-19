@@ -18,7 +18,7 @@ namespace MajsterAppV2
             var data = e.Reading;
             var wartoscx = data.Orientation.X;
             var wartoscy = data.Orientation.Y;
-            string dane = string.Format("{0} {1}", wartoscx.ToString("0"), wartoscy.ToString("1"));
+            string dane = string.Format("{0} {1}", wartoscx.ToString(), wartoscy.ToString());
             WezWartoscKatownika?.Invoke(this, dane);
 
             Console.WriteLine($"Reading: X: {data.Orientation.X}, Y: {data.Orientation.Y}, Z: {data.Orientation.Z}, W: {data.Orientation.W}");

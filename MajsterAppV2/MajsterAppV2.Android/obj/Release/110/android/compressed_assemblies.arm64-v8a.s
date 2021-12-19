@@ -35,7 +35,7 @@
 
 	/* 3: MajsterAppV2.dll */
 	/* uncompressed_file_size */
-	.word	34304
+	.word	34816
 	/* loaded */
 	.byte	0
 	/* data */
