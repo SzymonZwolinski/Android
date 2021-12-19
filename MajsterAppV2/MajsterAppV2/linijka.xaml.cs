@@ -66,6 +66,32 @@ namespace MajsterAppV2
 
         }
 
+        #region Malowanie
+        private void Maluj(int Wysokosc, int Szerokosc)
+        {
+            double mm_pixel = 3.77957517575;
+            double zakres = Math.Floor( Wysokosc / mm_pixel);
+            int i = 0; // ilosc kresek
+            while(zakres > 0)
+            {
+                if (i % 4 == 0)
+                {
+                    //5mm
+                }
+                else if(i % 9 == 0)
+                {
+                    //10mm
+                }
+                else
+                {
+                    //1mm
+                }
+
+                zakres--;
+            }
+        }
+        #endregion
+
     }
 
 
