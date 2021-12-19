@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="{Binding dane}"
+            <Label Text="{Binding Wartoscx}"
                    TextColor="Magenta"
                    FontSize="Title"
                    HorizontalOptions="Center"
