@@ -31,7 +31,7 @@
         <Button BackgroundColor="Yellow" CornerRadius="15" Image="poziomica.png" Grid.Row="1" Grid.Column="0" Text="Poziomica" Clicked="NavigateButton_OnClicked_2" />
         <Button BackgroundColor="Yellow" CornerRadius="15" Image="katownik.png" Grid.Row="2" Grid.Column="0" Text="Kątownik" Clicked="NavigateButton_OnClicked_3"  />
         <Button BackgroundColor="Yellow" CornerRadius="15" Image="minutnik.png" Grid.Row="3" Grid.Column="0" Text="Minutnik" Clicked="NavigateButton_OnClicked_4"  />
-        <Button BackgroundColor="Yellow" CornerRadius="15" Image="kompas.png" Grid.Row="4" Grid.Column="0" Text="Kompas" Clicked="NavigateButton_OnClicked_5"  />
+        <Button BackgroundColor="Magenta" CornerRadius="15" Image="kompas.png" Grid.Row="4" Grid.Column="0" Text="Kompas" Clicked="NavigateButton_OnClicked_5"  />
         <Button BackgroundColor="Yellow" CornerRadius="15" Image="linijka.png" Grid.Row="5" Grid.Column="0" Text="Linijka" Clicked="NavigateButton_OnClicked_6"  />
 
     </StackLayout>
