@@ -62,6 +62,8 @@ namespace MajsterAppV2
             var width = e.Info.Width;
             var height = e.Info.Height;
 
+            canvas.Translate(0, 0);
+            canvas.Scale(width / 300f);
 
             //mm = 3.77957517575 , 5 = (18.89787587875) 10 = 37.7957517575
             Maluj(height, canvas);
