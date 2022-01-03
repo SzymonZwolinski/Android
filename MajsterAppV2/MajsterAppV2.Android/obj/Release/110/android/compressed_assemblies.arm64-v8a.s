@@ -44,7 +44,7 @@
 
 	/* 4: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.word	2210816
+	.word	2211328
 	/* loaded */
 	.byte	0
 	/* data */
@@ -323,7 +323,7 @@
 
 	/* 35: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.word	47616
+	.word	49152
 	/* loaded */
 	.byte	0
 	/* data */

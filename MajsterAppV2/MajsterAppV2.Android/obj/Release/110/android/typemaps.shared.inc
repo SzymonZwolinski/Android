@@ -25,14 +25,14 @@
 	.section	.rodata.map_aname.4,"aMS",@progbits,1
 	.type	.L.map_aname.4, @object
 .L.map_aname.4:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	.L.map_aname.4, 27
+	.asciz	"Mono.Android"
+	.size	.L.map_aname.4, 13
 
 	.section	.rodata.map_aname.5,"aMS",@progbits,1
 	.type	.L.map_aname.5, @object
 .L.map_aname.5:
-	.asciz	"Xamarin.Essentials"
-	.size	.L.map_aname.5, 19
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	.L.map_aname.5, 27
 
 	.section	.rodata.map_aname.6,"aMS",@progbits,1
 	.type	.L.map_aname.6, @object
@@ -73,20 +73,20 @@
 	.section	.rodata.map_aname.12,"aMS",@progbits,1
 	.type	.L.map_aname.12, @object
 .L.map_aname.12:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	.L.map_aname.12, 34
+	.asciz	"Xamarin.Essentials"
+	.size	.L.map_aname.12, 19
 
 	.section	.rodata.map_aname.13,"aMS",@progbits,1
 	.type	.L.map_aname.13, @object
 .L.map_aname.13:
-	.asciz	"MajsterAppV2.Android"
-	.size	.L.map_aname.13, 21
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	.L.map_aname.13, 34
 
 	.section	.rodata.map_aname.14,"aMS",@progbits,1
 	.type	.L.map_aname.14, @object
 .L.map_aname.14:
-	.asciz	"Mono.Android"
-	.size	.L.map_aname.14, 13
+	.asciz	"MajsterAppV2.Android"
+	.size	.L.map_aname.14, 21
 
 	.section	.rodata.map_aname.15,"aMS",@progbits,1
 	.type	.L.map_aname.15, @object

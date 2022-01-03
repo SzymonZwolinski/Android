@@ -7,6 +7,7 @@ using SkiaSharp;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace MajsterAppV2
 {
@@ -73,14 +74,22 @@ namespace MajsterAppV2
            // Maluj(height, canvas);
             float x = 10;
             float mm_pixel = 3.77957517575f;
-            double zakres = Math.Floor(height / mm_pixel);
-            int i = 0; // ilosc kresek
-            float[] temp_tab = new float[(int)zakres];
-            for (int temp = 0; temp != zakres; temp++)
-            {
-                temp_tab[temp] = (temp + 1) / 10;
+            //double zakres = Math.Floor(height / mm_pixel);
+            int i = 1; // ilosc kresek
 
-            }
+            var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+            // Screen density
+            var density = mainDisplayInfo.Density;
+
+            double wysokosc = (double)height / density;
+            double zakres = Math.Floor(wysokosc / mm_pixel);
+
+
+
+
+
+
+
             canvas.DrawText(zakres.ToString(), 100, 100, magentaPaint);
             while (zakres >0)
             {
