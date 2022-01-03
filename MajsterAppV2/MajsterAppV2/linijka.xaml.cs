@@ -32,7 +32,7 @@ namespace MajsterAppV2
         {
             Style = SKPaintStyle.Fill,
             Color = SKColors.Magenta,
-            TextSize = 1.5f,
+            TextSize = 200f,
             IsAntialias = true
         };
 
@@ -49,7 +49,7 @@ namespace MajsterAppV2
         {
             Color = SKColors.Green,
             Style = SKPaintStyle.Fill,
-            TextSize = 1.5f,
+            //TextSize = 1.5f,
             IsAntialias = true
         };
         void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
@@ -57,21 +57,61 @@ namespace MajsterAppV2
             var surface = e.Surface;
             var canvas = surface.Canvas;
 
-            canvas.Clear(SKColors.AliceBlue);
+            canvas.Clear(SKColors.White);
 
             var width = e.Info.Width;
             var height = e.Info.Height;
 
             canvas.Translate(0, 0);
-            canvas.Scale(width / 300f);
+            //canvas.Scale(width / 300f);
+
+            //canvas.DrawCircle(0, 1584, 30, greenPaint);
+
+            //canvas.DrawText(height.ToString(), 50, 50, greenPaint);
 
             //mm = 3.77957517575 , 5 = (18.89787587875) 10 = 37.7957517575
-            Maluj(height, canvas);
+           // Maluj(height, canvas);
+            float x = 10;
+            float mm_pixel = 3.77957517575f;
+            double zakres = Math.Floor(height / mm_pixel);
+            int i = 0; // ilosc kresek
+            float[] temp_tab = new float[(int)zakres];
+            for (int temp = 0; temp != zakres; temp++)
+            {
+                temp_tab[temp] = (temp + 1) / 10;
+
+            }
+            canvas.DrawText(zakres.ToString(), 100, 100, magentaPaint);
+            while (zakres >0)
+            {
+                if (i % 4 == 0)
+                {
+                    //5mm zielony
+                    canvas.DrawCircle(0, mm_pixel,50, greenPaint);
+                    i++;
+                }
+                else if (i % 9 == 0)
+                {
+                    //10mm madżenta 
+                    
+                    canvas.DrawCircle(x, mm_pixel, 30, magentaPaint);
+                    i++;
+                }
+                else
+                {
+                    //1mm czerw
+                    canvas.DrawCircle(x, mm_pixel, 30, redPaint);
+                    i++;
+                }
+                mm_pixel = mm_pixel + mm_pixel;
+                zakres--;
+            }
+            //1584
 
         }
 
         #region Malowanie
-        private void Maluj(int Wysokosc, SKCanvas canva)
+        /*private void Maluj(int Wysokosc, SKCanvas canva)
         {
             canva.Translate(0, 0);
             float x = 10;
@@ -104,10 +144,10 @@ namespace MajsterAppV2
                 mm_pixel += mm_pixel;
                 zakres--;
             }
+        */
         }
         #endregion
 
     }
 
 
-}

@@ -466,4 +466,5 @@ C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Release\110\android\src\crc64bb223c2be3a01e03\SKGLViewRendererBase_2.java
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Release\110\android\src\crc64a0e0a82d0db9a07d\AccelerometerListener.java
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Release\110\android\src\crc64a0e0a82d0db9a07d\OrientationSensorListener.java
+C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Release\110\res\drawable\eciepecie.png
 C:\Users\michj\Desktop\eloelo123\MajsterAppV2\MajsterAppV2\MajsterAppV2.Android\obj\Release\110\MajsterAppV2.Android.csproj.CopyComplete

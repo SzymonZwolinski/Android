@@ -18,7 +18,7 @@ namespace MajsterAppV2
                 if(wartoscx != value)
                 {
                     wartoscx = value;
-                    OnPropertyChanged("wartoscx");
+                    OnPropertyChanged("Wartoscx");
                 }
             }
             get

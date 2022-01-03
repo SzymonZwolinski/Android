@@ -15,10 +15,22 @@ namespace MajsterAppV2
 
         private void OrientationSensor_ReadingChanged(object sender, OrientationSensorChangedEventArgs e)
         {
+
+
             var data = e.Reading;
             var wartoscx = data.Orientation.X;
             var wartoscy = data.Orientation.Y;
-            string dane = string.Format("{0} {1}", wartoscx.ToString(), wartoscy.ToString());
+            var wartoscz = data.Orientation.Z;
+
+            var wartoscw = data.Orientation.W;
+            var kat = Math.Acos(wartoscw) * 2;
+            kat = (180 / Math.PI) * kat;
+            var ax = wartoscx / Math.Sin(Math.Sin(kat/2));
+            var ay = wartoscy / Math.Sin(Math.Sin(kat/2));
+            var az = wartoscz / Math.Sin(Math.Sin(kat/2));
+
+
+            string dane = string.Format("{0} {1} {2} {3}",kat.ToString() ,ax.ToString(), ay.ToString(), az.ToString() );
             WezWartoscKatownika?.Invoke(this, dane);
 
             Console.WriteLine($"Reading: X: {data.Orientation.X}, Y: {data.Orientation.Y}, Z: {data.Orientation.Z}, W: {data.Orientation.W}");
