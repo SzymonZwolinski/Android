@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage  Title="MENU" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MajsterAppV2.MainPage">
+             x:Class="MajsterAppV2.MainPage"
+              BackgroundColor="LightSalmon">
+                
+            
 
 
-    <StackLayout   BackgroundColor="gray">
+    <StackLayout   BackgroundColor="LightSalmon">
 
-        <StackLayout BackgroundColor="Gray" Orientation="Horizontal">
+        <StackLayout BackgroundColor="LightSalmon" Orientation="Horizontal">
 
             <Image Source="logo.png"/>
             <Label Text="MajsterAPP" FontSize="30" TextColor="Black" HorizontalTextAlignment="Center" Padding="10" />

@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MajsterAppV2"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             x:Class="MajsterAppV2.poziomica">
+             x:Class="MajsterAppV2.poziomica"
+             BackgroundColor="LightSalmon"
+              >
+    
 
     <skia:SKCanvasView x:Name="canvasView" 
+                       
                        PaintSurface="canvasView_PaintSurface"/>
 
 

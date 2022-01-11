@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MajsterAppV2.minutnik">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Gray" Padding="60"  >
+        <StackLayout BackgroundColor="LightSalmon" Padding="60"  >
             <Entry x:Name="_entry"
                    Placeholder="nazwa wydarzenia"></Entry>
             <Label Text="Podaj czas"></Label>
@@ -17,6 +17,7 @@
                         HorizontalOptions="EndAndExpand"
                         Toggled="OnSwitchToggled"></Switch>
                 
+
             </StackLayout>
           
         </StackLayout>

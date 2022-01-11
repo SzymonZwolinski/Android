@@ -1032,8 +1032,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "SkiaSharp.Views.Forms": "2.80.3",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "bin/placeholder/MajsterAppV2.dll": {}
@@ -2409,5 +2409,27 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.7.0 na 1.6.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n MajsterAppV2.Android -> MajsterAppV2 -> Xamarin.Essentials (>= 1.7.0) \r\n MajsterAppV2.Android -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 5.0.0.2291 na 5.0.0.2012. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n MajsterAppV2.Android -> MajsterAppV2 -> Xamarin.Forms (>= 5.0.0.2291) \r\n MajsterAppV2.Android -> Xamarin.Forms (>= 5.0.0.2012)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

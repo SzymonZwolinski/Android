@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kgsqGaQ00/0oHW3I/gzaYp3NAWYRALIHcvrgaTj970ghluDAYgIYihyQR2BazYixcnVjRVAclQU3igA99kJ30A==",
+  "dgSpecHash": "9GTi7I5VXuwG6UGnobKfRNrDdKVQjtXsLn+PfMKJVoA1Pdog6RSppHlDHZhMXYope5ubdR3RTh8QyqvBnPJBdA==",
   "success": true,
   "projectFilePath": "C:\\Users\\michj\\Desktop\\eloelo123\\MajsterAppV2\\MajsterAppV2\\MajsterAppV2.Android\\MajsterAppV2.Android.csproj",
   "expectedPackageFiles": [
@@ -57,5 +57,26 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.7.0 na 1.6.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n MajsterAppV2.Android -> MajsterAppV2 -> Xamarin.Essentials (>= 1.7.0) \r\n MajsterAppV2.Android -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 5.0.0.2291 na 5.0.0.2012. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n MajsterAppV2.Android -> MajsterAppV2 -> Xamarin.Forms (>= 5.0.0.2291) \r\n MajsterAppV2.Android -> Xamarin.Forms (>= 5.0.0.2012)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

@@ -55,7 +55,7 @@ namespace MajsterAppV2
             var surface = e.Surface;
             var canvas = surface.Canvas;
 
-            canvas.Clear(SKColors.CornflowerBlue);
+            canvas.Clear(SKColors.LightSalmon);
 
             var width = e.Info.Width;
             var height = e.Info.Height;
