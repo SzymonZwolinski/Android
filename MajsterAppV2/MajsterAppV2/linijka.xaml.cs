@@ -19,7 +19,7 @@ namespace MajsterAppV2
             InitializeComponent();
             Device.StartTimer(TimeSpan.FromSeconds(1f / 60), () =>
             {
-               // canvasView.InvalidateSurface();
+                // canvasView.InvalidateSurface();
                 return true;
             });
         }
@@ -72,25 +72,25 @@ namespace MajsterAppV2
             double zakres = Math.Floor(wysokosc / mm_pixel);
 
             canvas.DrawText(zakres.ToString(), 100, 100, magentaPaint);
-            while (zakres >0)
+            while (zakres > 0)
             {
                 if (i % 4 == 0)
                 {
-                    //5mm zielony
-                    canvas.DrawCircle(0, mm_pixel,50, greenPaint);
+                    //5mm
+                    canvas.DrawCircle(0, mm_pixel, 30, greenPaint);
                     i++;
                 }
                 else if (i % 9 == 0)
                 {
-                    //10mm madżenta 
-                    
-                    canvas.DrawCircle(x, mm_pixel, 30, magentaPaint);
+                    //10mm
+
+                    canvas.DrawCircle(x, mm_pixel, 15, magentaPaint);
                     i++;
                 }
                 else
                 {
-                    //1mm czerw
-                    canvas.DrawCircle(x, mm_pixel, 30, redPaint);
+                    //1mm 
+                    canvas.DrawCircle(x, mm_pixel, 50, redPaint);
                     i++;
                 }
                 mm_pixel = mm_pixel + mm_pixel;
@@ -98,5 +98,6 @@ namespace MajsterAppV2
             }
         }
     }
+}
 
 
