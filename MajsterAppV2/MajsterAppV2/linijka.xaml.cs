@@ -33,7 +33,6 @@ namespace MajsterAppV2
         {
             Style = SKPaintStyle.Fill,
             Color = SKColors.Magenta,
-            TextSize = 200f,
             IsAntialias = true
         };
 
@@ -42,7 +41,6 @@ namespace MajsterAppV2
         {
             Style = SKPaintStyle.StrokeAndFill,
             Color = SKColors.Red,
-            TextSize = 1.5f,
             IsAntialias = true
         };
 
@@ -50,7 +48,6 @@ namespace MajsterAppV2
         {
             Color = SKColors.Green,
             Style = SKPaintStyle.Fill,
-            //TextSize = 1.5f,
             IsAntialias = true
         };
         void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
@@ -64,31 +61,15 @@ namespace MajsterAppV2
             var height = e.Info.Height;
 
             canvas.Translate(0, 0);
-            //canvas.Scale(width / 300f);
-
-            //canvas.DrawCircle(0, 1584, 30, greenPaint);
-
-            //canvas.DrawText(height.ToString(), 50, 50, greenPaint);
-
             //mm = 3.77957517575 , 5 = (18.89787587875) 10 = 37.7957517575
-           // Maluj(height, canvas);
             float x = 10;
             float mm_pixel = 3.77957517575f;
-            //double zakres = Math.Floor(height / mm_pixel);
             int i = 1; // ilosc kresek
 
             var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
-            // Screen density
             var density = mainDisplayInfo.Density;
-
             double wysokosc = (double)height / density;
             double zakres = Math.Floor(wysokosc / mm_pixel);
-
-
-
-
-
-
 
             canvas.DrawText(zakres.ToString(), 100, 100, magentaPaint);
             while (zakres >0)
@@ -115,48 +96,7 @@ namespace MajsterAppV2
                 mm_pixel = mm_pixel + mm_pixel;
                 zakres--;
             }
-            //1584
-
         }
-
-        #region Malowanie
-        /*private void Maluj(int Wysokosc, SKCanvas canva)
-        {
-            canva.Translate(0, 0);
-            float x = 10;
-            double mm_pixel = 3.77957517575;
-            double zakres = Math.Floor(Wysokosc / mm_pixel) ;
-            int i = 0; // ilosc kresek
-            float[] temp_tab = new float[(int)zakres];
-            for(int temp =0; temp != zakres;temp++)
-            {
-                temp_tab[temp] = (temp+1)/10;
-                
-            }
-            while (zakres > 0)
-            {
-                if (i % 4 == 0)
-                {
-                    //5mm zielony
-                    canva.DrawText(temp_tab[i].ToString(), x, (float)mm_pixel, greenPaint);
-                }
-                else if(i % 9 == 0)
-                {
-                    //10mm madżenta 
-                    canva.DrawText(temp_tab[i].ToString(), x, (float)mm_pixel, magentaPaint);
-                }
-                else
-                {
-                    //1mm czerw
-                    canva.DrawText(temp_tab[i].ToString(), x, (float)mm_pixel, redPaint);
-                }
-                mm_pixel += mm_pixel;
-                zakres--;
-            }
-        */
-        }
-        #endregion
-
     }
 
 
